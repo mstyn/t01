@@ -14,7 +14,7 @@ app.configure(function(){
   app.set('view engine', viewEngine);
   /*---------------------------------------------------*/
   app.use(express.cookieParser());
-  app.use(express.logger("dev"));
+  /* app.use(express.logger("dev")); */
   app.use(express.session({ 
       secret: 'fegwegwe',
       store: new MongoStore(dbsettings),
