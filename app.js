@@ -37,7 +37,8 @@ app.del('/auth',routers.auth.logout); //Выход с сайта
 global.controllers.db.opendb(dbsettings, function(error,db){
     if (!error){
         global.db = db;
-        app.listen(process.env.PORT);
-		console.log(process.env.PORT);
+        var port = process.env.PORT || 5000;       
+		app.listen(port)                           // Запускаем сервер на 5000 порту, если не указана переменная окружения "port" 
+		console.log("Listening at " + port)        // Пишем в консоль, что запустились
     } else console.log('Error connect to db');
 });
