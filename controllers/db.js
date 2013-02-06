@@ -6,7 +6,7 @@
     /* var server = new Server(settings.host, settings.port, {auto_reconnect: settings.auto_reconnect});
     var db = new Db(settings.db, server); */
 	
-	var server = new Server('linus.mongohq.com', 10050, {auto_reconnect: settings.auto_reconnect});
+	var server = new Server('linus.mongohq.com', 10050, {auto_reconnect: true});
     var db = new Db('my01', server);
     
     db.open(function(err, db) {
