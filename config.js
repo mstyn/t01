@@ -5,5 +5,6 @@ exports.settings = {
 	port: 10050,
 	db: 'my01',
 	username: 'mstyn',
-	password: 'mstyn04'
+	password: 'mstyn04',
+	auto_reconnect: false
 };
