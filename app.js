@@ -38,5 +38,6 @@ global.controllers.db.opendb(dbsettings, function(error,db){
     if (!error){
         global.db = db;
         app.listen(process.env.PORT);
+		console.log(process.env.PORT);
     } else console.log('Error connect to db');
 });
