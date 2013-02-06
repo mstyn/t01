@@ -1,6 +1,6 @@
 ﻿// config.js
 
-var settings = {
+exports.settings = {
 	host: 'linus.mongohq.com',
 	port: 10050,
 	db: 'my01',
